@@ -28,8 +28,8 @@
     flex: 100%;
     max-width: 100%;
   }
-}
 
+}
 .navbar-shrink #logo{
 	border: 3px solid #dadada;
 	margin-bottom: -5%;
@@ -43,7 +43,7 @@
 	background-color: #dadada;
 }
 
-@media (max-width: 992px){
+@media screen and (max-width: 992px){
 .navbar-shrink #logo {
 	margin-left: 0%;
 }
@@ -52,7 +52,7 @@
 	}
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 	.navbar-shrink #logo img{
 	margin-bottom: -15px;
 	}
@@ -61,7 +61,7 @@
 	}
 }
 
-@media (min-width: 300px){
+@media screen and (max-width: 300px){
 	.navbar-shrink #logo img{
 	margin-bottom: -10px;
 	}
@@ -71,17 +71,9 @@
 	.navbar-shrink #logo {
 		margin-left: 0.5%;
 	}
-  .card {
-    position: relative;
-    box-shadow: 3px 6px 7px 2px #b7b7b7;
-    transition: 0.3s;
-    height: 200px;
-    border:0px solid rgba(0,0,0,.125);
-    border-radius: 10%;
-}
 }
 
-@media (min-width: 600px){
+@media screen and (max-width: 600px){
 	.navbar-shrink #logo img{
 	margin-bottom: -10px;
 	}
@@ -91,15 +83,9 @@
 	.navbar-shrink #logo {
 		margin-left: 0.5%;
 	}
-  .card {
-    position: relative;
-    box-shadow: 3px 6px 7px 2px #b7b7b7;
-    transition: 0.3s;
-    height: 200px;
-    border:0px solid rgba(0,0,0,.125);
-    border-radius: 10%;
+
 }
-}
+
 
 .navbar-shrink #logo img{
 margin-bottom: -12px;
@@ -474,6 +460,20 @@ h5 {
 .bg-transparent{
   background-color: transparent;
 }
+
+@media (min-width:200px) and (max-width:600px){
+  .card {
+    position: relative;
+    box-shadow: 3px 6px 7px 2px #b7b7b7;
+    transition: 0.3s;
+    width: 250px;
+    height: 250px;
+    margin: 8px;
+    border:0px solid rgba(0,0,0,.125);
+    border-radius: 10%;
+}
+}
+
 
 /* Background Images*/
 #lehladakh{
