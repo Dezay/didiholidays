@@ -1,0 +1,457 @@
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.navbar-shrink #logo{
+	border: 3px solid #dadada;
+	margin-bottom: -5%;
+	margin-left: -5%;
+	background: #dadada;
+}
+
+.top_nav{
+  padding-top: 2px;
+	height: 26px;
+	background-color: #dadada;
+}
+
+@media (min-width: 992px){
+.navbar-shrink #logo {
+	margin-left: 0%;
+}
+	.navbar-shrink #logo img{
+		margin-bottom: -15px;
+	}
+}
+
+@media (min-width: 768px){
+	.navbar-shrink #logo img{
+	margin-bottom: -15px;
+	}
+	.navbar-shrink #logo {
+		margin-left: 0%;
+	}
+}
+
+@media (min-width: 300px){
+	.navbar-shrink #logo img{
+	margin-bottom: -10px;
+	}
+	.navbar-shrink #logo {
+		margin-left: 0.5%;
+	}
+}
+
+.navbar-shrink #logo img{
+margin-bottom: -12px;
+}
+
+.floatingButtonWrap {
+    display: block;
+    position: fixed;
+    bottom: 75px;
+    right: 65px;
+    z-index: 999999999;
+}
+
+.floatingButtonInner {
+    position: relative;
+}
+
+.floatingButton {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #0272b7, #507cb3);
+    background: -o-linear-gradient(45deg, #0272b7, #507cb3);
+    background: linear-gradient(45deg, #0272b7, #507cb3);
+    color: #fff;
+    line-height: 70px;
+		font-size: 40px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    border: 5px solid #8facca;
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.floatingButton .fa {
+    font-size: 25px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.floatingButton .icon-default {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.floatingButton.open .icon-default {
+    transform: rotate(270deg);
+}
+
+.floatingMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    /* width: 200px; */
+    display: none;
+}
+
+.floatingMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+    padding: 8px 12px;
+		margin-right: 20px;
+		height: 40px;
+		width: 40px;
+    display: inline-block;
+    background: #607D8B;
+    color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.4s;
+    /* -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.22); */
+    -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+    box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+}
+
+.floatingMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+h5 {
+  display: inline-block;
+  padding: 10px;
+  background: #507cb3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+	position: relative;
+	box-shadow: 3px 6px 7px 2px #b7b7b7;
+	transition: 0.3s;
+	height: 350px;
+	width: 350px;
+	border-radius: 10%;
+}
+
+.camp_element{
+	margin-top: 20px;
+}
+
+.camp_details{
+	margin: 10px;
+}
+/* Add rounded corners to the top left and the top right corner of the image */
+
+.card img {
+	height: 100%;
+	opacity: .5;
+	border-radius: 10%;
+	transition: opacity 1s ease;
+}
+
+.card-details{
+	position: relative;
+	margin-top: 50px;
+	transition: 0.3s;
+	width: 100%;
+	height: 350px;
+	border-radius: 10%;
+}
+.card div {
+	transition: opacity 0.5s linear;
+}
+.card-button {
+	position: absolute;
+	width: 500px;
+	left: 0;
+	top: 180px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .35s ease;
+}
+.card-title{
+	margin-top: 50%;
+	color: #;
+}
+.card-button a {
+	width: 200px;
+	padding: 12px 48px;
+	text-align: center;
+	color: white;
+	border: solid 2px white;
+	z-index: 1;
+}
+.card:hover {
+	cursor: pointer;
+}
+.card:hover img, .card:hover .card-button {
+	opacity: 1;
+}
+.card:hover div {
+	opacity: 0;
+}
+
+.card-extras{
+  position: relative;
+  padding: 50px 8px;
+  border-radius: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 25px;
+  z-index: 10;
+  box-shadow: inset -1px -6px 20px 0px #607d8b;
+  transition: all .35s ease;
+}
+
+.card-extras .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+  background-color: #0271b7;
+}
+
+.card-extras .overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-extras:hover{
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.card-extras:hover .overlay{
+  opacity:1;
+}
+@media only screen and (max-width: 1200px) {
+	.flip {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.flip {
+		width: 250px;
+	}
+}
+.button {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity .35s ease;
+}
+.button a {
+	width: 200px;
+	padding: 12px 48px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: #607D8B; /* Green */
+	color: white;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button:hover a{
+	border: solid 2px #607D8B;
+	background-color: transparent;
+	z-index: 1;
+}
+.card:hover .button {
+	opacity: 1;
+}
+
+/* Dates Format */
+.date {
+    height: 80px;
+    width: 80px;
+		padding: 8px;
+    background: linear-gradient(#507cb3 50%,white 50%);
+    border-radius: 50%;
+    box-shadow: 4px 3px 20px 0px #607D8B;
+		margin: 8px;
+		transition: all .2s ease-in-out;
+		cursor: pointer;
+}
+
+.date_selected{
+	  background: linear-gradient(#ffeb3b 50%,white 50%);
+		transform: scale(1.1);
+		transition: all .2s ease-in-out;
+}
+.date_selected .month{
+		color: #ffeb3b;
+}
+.date:hover{
+	transform: scale(1.1);
+}
+
+.day{
+	color: white
+}
+.month{
+	color: #507cb3;
+}
+
+.text-bar{
+	color: #dadada;
+}
+
+.timeline-body{
+  width: 100%;
+}
+
+/* Camps Section */
+
+.camp-section{
+    margin-top: 2px;
+}
+
+.camp-section .camp-details{
+  margin: 10px 0;
+}
+
+.camp-details p{
+  text-align: justify;
+}
+.camp-section h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.camp-section .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+
+.camp-section .row
+{
+    margin-bottom: 10%;
+}
+.camp-img
+{
+    text-align: center;
+}
+
+.timeline-heading{
+  color: #ffa500;
+}
+
+.timeline-heading #subheading{
+  color: #3931af;
+}
+
+#extra{
+  margin: 1px;
+  text-align: left;
+}
+
+#extra li{
+  margin: 10px 0;
+}
+
+.icon-green{
+  color: #3cba54;
+}
+
+.icon-yellow{
+  color: #f4c20d;
+}
+.icon-red{
+  color: #db3236;
+}
+
+.icon-blue{
+  color: #4885ed;
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+/* Background Images*/
+#lehladakh{
+	background-image: url('..//img/Jammu-Kashmir.jpg');
+}
+
+#harkidoon{
+  background-image: url('..//img/harkidoon.jpg');
+
+}
+
+#brahmatal{
+  background-image: url('..//img/brahmatal/bg.jpeg');
+}
