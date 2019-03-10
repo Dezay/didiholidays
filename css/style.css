@@ -219,6 +219,7 @@ h5 {
 	transition: 0.3s;
 	height: 350px;
 	width: 350px;
+  margin: 10px;
   border:0px solid rgba(0,0,0,.125);
 	border-radius: 10%;
 }
