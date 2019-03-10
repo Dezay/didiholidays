@@ -239,7 +239,7 @@ img::-moz-selection {
     margin-top: 0;
   }
   #mainNav.navbar-shrink .navbar-brand img {
-    max-height: 80px;
+    max-height: 50px;
     padding: 2px 0;
   }
 }
