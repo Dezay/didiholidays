@@ -288,7 +288,7 @@ h5 {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 0.5;
   border-radius: 10px;
   transition: all 0.7s ease;
   background-color: #0271b7;
@@ -472,6 +472,26 @@ h5 {
     border:0px solid rgba(0,0,0,.125);
     border-radius: 10%;
 }
+.floatingButton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, #0272b7, #507cb3);
+    background: -o-linear-gradient(45deg, #0272b7, #507cb3);
+    background: linear-gradient(45deg, #0272b7, #507cb3);
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: -40px;
+    right: -41px;
+    border: 5px solid #8facca;
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+}
 }
 
 
@@ -482,6 +502,11 @@ h5 {
 
 #harkidoon{
   background-image: url('..//img/harkidoon.jpg');
+
+}
+
+#dharamshala{
+  background-image: url('..//img/dharamshala.jpg');
 
 }
 

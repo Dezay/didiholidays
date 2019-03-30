@@ -183,7 +183,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
-    padding: 12px 0;
+    margin-left: 10px;
   }
   #mainNav.navbar-shrink .navbar-brand img {
     max-height: 80px;
@@ -239,7 +239,7 @@ img::-moz-selection {
     margin-top: 0;
   }
   #mainNav.navbar-shrink .navbar-brand img {
-    max-height: 50px;
+    max-height: 80px;
     padding: 2px 0;
   }
 }
