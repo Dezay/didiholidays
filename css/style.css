@@ -207,7 +207,7 @@ h5 {
 	width: 350px;
   margin: 10px;
   border:0px solid rgba(0,0,0,.125);
-	border-radius: 10%;
+	border-radius: 5%;
 }
 
 .camp_element{
@@ -221,8 +221,7 @@ h5 {
 
 .card img {
 	height: 100%;
-	opacity: .5;
-	border-radius: 10%;
+	border-radius: 5%;
 	transition: opacity 1s ease;
 }
 
@@ -261,12 +260,11 @@ h5 {
 .card:hover {
 	cursor: pointer;
 }
-.card:hover img, .card:hover .card-button {
-	opacity: 1;
+.card:hover {
+  transform: scale(1.2);
+  transition: all .75s ease;
 }
-.card:hover div {
-	opacity: 0;
-}
+
 
 .card-extras{
   position: relative;
@@ -288,7 +286,7 @@ h5 {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0;
   border-radius: 10px;
   transition: all 0.7s ease;
   background-color: #0271b7;
