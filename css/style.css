@@ -375,14 +375,29 @@ h5 {
 }
 .date:hover{
 	transform: scale(1.1);
+  background: #babfbe;
+}
+
+.date:hover h4{
+  display: none;
+}
+
+.date:hover .book{
+  display: block;
+  padding-top: 4px;
 }
 
 .day{
-	color: white
+	color: white;
 }
 .month{
 	color: #507cb3;
 }
+
+.book{
+  display: none;
+}
+
 
 .text-bar{
 	color: #dadada;
