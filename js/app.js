@@ -45,6 +45,13 @@ $(document).ready(function() {
     })
   });
 
+  $('.date').append('<h4 class="book text-white"> Book Now </h4>');
+
+
+  $('.date').hover(function(e) {});
+
+
+
   $('.date').on('click', function(e) {
     var date_id = $(this).attr('id');
 
