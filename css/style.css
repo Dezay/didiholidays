@@ -194,7 +194,7 @@ h5 {
 }
 
 .full-screen {
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -514,6 +514,11 @@ h5 {
 
 .carousel-control-next, .carousel-control-prev {
      width: 10%;
+}
+
+.carousel-item img{
+  display: block;
+  background-color: #abfbeb;
 }
 
 .float-right {
